@@ -16,6 +16,7 @@ const files = Object.keys(genTargets)
 let out = ''
 
 files.map((fn) => {
+  const cleanFn = fn.replace(/[^A-Za-z]/g, '_')
   let fnTestOut = ''
 
   // Now, grab all the names we need to test on.
@@ -37,14 +38,12 @@ files.map((fn) => {
     fnTestOut += `
   describe('${doc.name}', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await ${doc.name}(${params})
+      const result = await SUT_${cleanFn}.${doc.name}(${params})
       expect(result).toMatchSnapshot()
     })
   })
 `
   })
-
-  const cleanFn = fn.replace(/[^A-Za-z]/g, '_')
 
   out += `
 import * as SUT_${cleanFn} from '${fn}'
