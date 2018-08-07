@@ -53,19 +53,19 @@
         ]
     },
     {
-        "name": "foo",
+        "name": "MyMath.foo",
         "documentation": "",
         "type": "number",
         "constructors": []
     },
     {
-        "name": "blub",
+        "name": "MyMath.blub",
         "documentation": "",
         "type": "(x: string) => string",
         "constructors": []
     },
     {
-        "name": "add",
+        "name": "MyMath.add",
         "documentation": "",
         "type": "() => number",
         "constructors": []

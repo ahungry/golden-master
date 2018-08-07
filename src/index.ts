@@ -40,7 +40,7 @@ function generateDocumentation (
   return
 
   /** visit nodes finding exported classes */
-  function visit (node: ts.Node) {
+  function visit (node: ts.Node, namePrefix: string = '') {
     // Only consider exported nodes (comment out to include class methods)
     // if (!isNodeExported(node)) {
     //   return
@@ -50,21 +50,25 @@ function generateDocumentation (
       // This is a top level class, get its symbol
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
-        output.push(serializeClass(symbol))
+        const s = serializeClass(symbol)
+        output.push(s)
+        namePrefix = String(s.name)
       }
-      // No need to walk any further, class expressions/inner declarations
-      // cannot be exported
     } else if (ts.isPropertyDeclaration(node)) {
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
-        output.push(serializeClass(symbol))
-      }
-    } else if (ts.isVariableDeclaration(node) && node.name) {
-      let symbol = checker.getSymbolAtLocation(node.name)
-      if (symbol) {
-        output.push(serializeClass(symbol))
+        const s = serializeClass(symbol)
+        s.name = namePrefix + '.' + s.name
+        output.push(s)
       }
     } else if (ts.isMethodDeclaration(node) && node.name) {
+      let symbol = checker.getSymbolAtLocation(node.name)
+      if (symbol) {
+        const s = serializeClass(symbol)
+        s.name = namePrefix + '.' + s.name
+        output.push(s)
+      }
+    } else if (ts.isVariableDeclaration(node) && node.name) {
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
         output.push(serializeClass(symbol))
@@ -79,7 +83,8 @@ function generateDocumentation (
       ts.forEachChild(node, visit)
     }
 
-    ts.forEachChild(node, visit)
+    const fn = (n: any) => visit(n, namePrefix)
+    ts.forEachChild(node, fn)
   }
 
   /** Serialize a symbol into a json object */
