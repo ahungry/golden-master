@@ -1,5 +1,6 @@
 import * as ts from 'typescript'
 import * as fs from 'fs'
+import * as p from 'process'
 
 import { DocEntry, generateDocumentation } from './type_parser'
 
@@ -8,4 +9,50 @@ const genTargets = generateDocumentation(process.argv.slice(2), {
   module: ts.ModuleKind.CommonJS
 })
 
-console.log(genTargets)
+// console.log(genTargets)
+// Loop across all our filenames, making some nice test file.
+const files = Object.keys(genTargets)
+
+let out = ''
+
+files.map((fn) => {
+  let fnTestOut = ''
+
+  // Now, grab all the names we need to test on.
+  genTargets[fn].map((doc: DocEntry) => {
+    // Pluck apart the type signature - TODO: Lookup more complex types.
+    const m = String(doc.type).match(/^(\(.*?\))/)
+
+    if (m === null || m.length < 1) return
+
+    const params = m[1].split(',').map((p) => p.split(':')).map((t) => {
+      switch (true) {
+        case /number/.test(t[1]): return 5
+        case /string/.test(t[1]): return "'dog'"
+        default: return null
+      }
+    }).join(', ')
+
+
+    fnTestOut += `
+  describe('${doc.name}', () => {
+    it('Will match a known snapshot thanks to golden master.', async () => {
+      const result = await ${doc.name}(${params})
+      expect(result).toMatchSnapshot()
+    })
+  })
+`
+  })
+
+  const cleanFn = fn.replace(/[^A-Za-z]/g, '_')
+
+  out += `
+import * as SUT_${cleanFn} from '${fn}'
+
+describe('${fn}', () => {
+  ${fnTestOut}
+})
+`
+})
+
+console.log(out)
