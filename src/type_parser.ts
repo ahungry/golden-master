@@ -55,26 +55,14 @@ export function generateDocumentation (
         output.push(s)
         namePrefix += String(s.name)
       }
-    } else if (ts.isPropertyDeclaration(node)) {
+    } else if (ts.isPropertyDeclaration(node) || ts.isMethodDeclaration(node)) {
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
         const s = serializeClass(symbol)
         s.name = namePrefix + '.' + s.name
         output.push(s)
       }
-    } else if (ts.isMethodDeclaration(node) && node.name) {
-      let symbol = checker.getSymbolAtLocation(node.name)
-      if (symbol) {
-        const s = serializeClass(symbol)
-        s.name = namePrefix + '.' + s.name
-        output.push(s)
-      }
-    } else if (ts.isVariableDeclaration(node) && node.name) {
-      let symbol = checker.getSymbolAtLocation(node.name)
-      if (symbol) {
-        output.push(serializeClass(symbol))
-      }
-    } else if (ts.isFunctionDeclaration(node) && node.name) {
+    } else if ((ts.isVariableDeclaration(node) || ts.isFunctionDeclaration(node)) && node.name) {
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
         output.push(serializeClass(symbol))
