@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`example/math.ts add Will match a known snapshot thanks to golden master (5, 5). 1`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (5, 5). 1`] = `10`;
+
+exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (5, 5). 1`] = `10`;
+
+exports[`example/words.ts add Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add2 Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add3 Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;

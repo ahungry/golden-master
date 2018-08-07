@@ -37,7 +37,7 @@ files.map((fn) => {
 
     fnTestOut += `
   describe('${doc.name}', () => {
-    it('Will match a known snapshot thanks to golden master.', async () => {
+    it('Will match a known snapshot thanks to golden master (${params.replace(/'/g, '"')}).', async () => {
       const result = await SUT_${cleanFn}.${doc.name}(${params})
       expect(result).toMatchSnapshot()
     })
@@ -45,8 +45,9 @@ files.map((fn) => {
 `
   })
 
+  // TODO: Make the dot prefix user based for relative paths
   out += `
-import * as SUT_${cleanFn} from './${fn}'
+import * as SUT_${cleanFn} from '../${fn}'
 
 describe('${fn}', () => {
   ${fnTestOut}
