@@ -46,7 +46,7 @@ files.map((fn) => {
   })
 
   out += `
-import * as SUT_${cleanFn} from '${fn}'
+import * as SUT_${cleanFn} from './${fn}'
 
 describe('${fn}', () => {
   ${fnTestOut}

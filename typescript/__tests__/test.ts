@@ -1,94 +1,94 @@
 
-import * as SUT_example_math_ts from 'example/math.ts'
+import * as SUT_example_math_ts from './example/math.ts'
 
 describe('example/math.ts', () => {
   
   describe('add', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add(5, 5)
+      const result = await SUT_example_math_ts.add(5, 5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add2', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add2(5, 5)
+      const result = await SUT_example_math_ts.add2(5, 5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add3', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add3(5, 5)
+      const result = await SUT_example_math_ts.add3(5, 5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('adder', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await adder(5, 5)
+      const result = await SUT_example_math_ts.adder(5, 5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('MyMath.blub', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await MyMath.blub('dog')
+      const result = await SUT_example_math_ts.MyMath.blub('dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('MyMath.add', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await MyMath.add()
+      const result = await SUT_example_math_ts.MyMath.add()
       expect(result).toMatchSnapshot()
     })
   })
 
 })
 
-import * as SUT_example_words_ts from 'example/words.ts'
+import * as SUT_example_words_ts from './example/words.ts'
 
 describe('example/words.ts', () => {
   
   describe('add', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add('dog', 'dog')
+      const result = await SUT_example_words_ts.add('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add2', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add2('dog', 'dog')
+      const result = await SUT_example_words_ts.add2('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add3', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await add3('dog', 'dog')
+      const result = await SUT_example_words_ts.add3('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('adder', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await adder('dog', 'dog')
+      const result = await SUT_example_words_ts.adder('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('MyWords.blub', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await MyWords.blub('dog')
+      const result = await SUT_example_words_ts.MyWords.blub('dog')
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('MyWords.add', () => {
     it('Will match a known snapshot thanks to golden master.', async () => {
-      const result = await MyWords.add()
+      const result = await SUT_example_words_ts.MyWords.add()
       expect(result).toMatchSnapshot()
     })
   })
