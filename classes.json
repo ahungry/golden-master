@@ -1,0 +1,31 @@
+[
+    {
+        "name": "adder",
+        "documentation": "",
+        "type": "(a: number, b: number) => number",
+        "constructors": []
+    },
+    {
+        "name": "MyMath",
+        "documentation": "",
+        "type": "typeof MyMath",
+        "constructors": [
+            {
+                "parameters": [
+                    {
+                        "name": "a",
+                        "documentation": "",
+                        "type": "number"
+                    },
+                    {
+                        "name": "b",
+                        "documentation": "",
+                        "type": "number"
+                    }
+                ],
+                "returnType": "MyMath",
+                "documentation": ""
+            }
+        ]
+    }
+]
