@@ -1,5 +1,29 @@
 [
     {
+        "name": "add",
+        "documentation": "",
+        "type": "(a: number, b: number) => number",
+        "constructors": []
+    },
+    {
+        "name": "add2",
+        "documentation": "",
+        "type": "(a: number, b: number) => number",
+        "constructors": []
+    },
+    {
+        "name": "add3",
+        "documentation": "",
+        "type": "(a: number, b: number) => number",
+        "constructors": []
+    },
+    {
+        "name": "z",
+        "documentation": "",
+        "type": "number",
+        "constructors": []
+    },
+    {
         "name": "adder",
         "documentation": "",
         "type": "(a: number, b: number) => number",
@@ -27,5 +51,23 @@
                 "documentation": ""
             }
         ]
+    },
+    {
+        "name": "foo",
+        "documentation": "",
+        "type": "number",
+        "constructors": []
+    },
+    {
+        "name": "blub",
+        "documentation": "",
+        "type": "(x: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "add",
+        "documentation": "",
+        "type": "() => number",
+        "constructors": []
     }
 ]

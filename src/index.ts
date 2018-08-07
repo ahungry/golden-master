@@ -41,10 +41,10 @@ function generateDocumentation (
 
   /** visit nodes finding exported classes */
   function visit (node: ts.Node) {
-    // Only consider exported nodes
-    if (!isNodeExported(node)) {
-      return
-    }
+    // Only consider exported nodes (comment out to include class methods)
+    // if (!isNodeExported(node)) {
+    //   return
+    // }
 
     if (ts.isClassDeclaration(node) && node.name) {
       // This is a top level class, get its symbol
@@ -59,25 +59,12 @@ function generateDocumentation (
       if (symbol) {
         output.push(serializeClass(symbol))
       }
-    } else if (ts.isTypeAliasDeclaration(node) && node.name) {
-      console.log('ta')
-      let symbol = checker.getSymbolAtLocation(node.name)
-      if (symbol) {
-        output.push(serializeClass(symbol))
-      }
-    } else if (ts.isInterfaceDeclaration(node) && node.name) {
-      console.log('id')
-      let symbol = checker.getSymbolAtLocation(node.name)
-      if (symbol) {
-        output.push(serializeClass(symbol))
-      }
     } else if (ts.isVariableDeclaration(node) && node.name) {
-      console.log('ivd')
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
         output.push(serializeClass(symbol))
       }
-    } else if (ts.isMethodSignature(node) && node.name) {
+    } else if (ts.isMethodDeclaration(node) && node.name) {
       let symbol = checker.getSymbolAtLocation(node.name)
       if (symbol) {
         output.push(serializeClass(symbol))
@@ -87,19 +74,12 @@ function generateDocumentation (
       if (symbol) {
         output.push(serializeClass(symbol))
       }
-    } else if (ts.isVariableDeclarationList(node)) {
-      console.log('vdl', node)
-      // let symbol = checker.getSymbolAtLocation(node.name)
-      // if (symbol) {
-      //   output.push(serializeClass(symbol))
-      // }
     } else if (ts.isModuleDeclaration(node)) {
-      // console.log(node.name)
       // This is a namespace, visit its children
-      console.log('me first')
-      p.exit()
       ts.forEachChild(node, visit)
     }
+
+    ts.forEachChild(node, visit)
   }
 
   /** Serialize a symbol into a json object */
