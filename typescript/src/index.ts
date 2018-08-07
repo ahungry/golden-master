@@ -9,6 +9,14 @@ const genTargets = generateDocumentation(process.argv.slice(2), {
   module: ts.ModuleKind.CommonJS
 })
 
+const getRandomNumber = (): number => {
+  let base = Math.random() * 10000000
+
+  if (base % 2) base *= -1
+
+  return base
+}
+
 // console.log(genTargets)
 // Loop across all our filenames, making some nice test file.
 const files = Object.keys(genTargets)
@@ -28,7 +36,7 @@ files.map((fn) => {
 
     const params = m[1].split(',').map((p) => p.split(':')).map((t) => {
       switch (true) {
-        case /number/.test(t[1]): return 5
+        case /number/.test(t[1]): return getRandomNumber()
         case /string/.test(t[1]): return "'dog'"
         default: return null
       }
