@@ -1,8 +1,9 @@
 {
   "name": "golden-master",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "GPL-3.0-with-autoconf-exception",
+  "private": false,
   "devDependencies": {
     "@types/node": "^10.5.7",
     "ts-node": "^7.0.0",
