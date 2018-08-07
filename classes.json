@@ -53,21 +53,92 @@
         ]
     },
     {
-        "name": "MyMath.foo",
+        "name": "example/math.ts//MyMath.foo",
         "documentation": "",
         "type": "number",
         "constructors": []
     },
     {
-        "name": "MyMath.blub",
+        "name": "example/math.ts//MyMath.blub",
         "documentation": "",
         "type": "(x: string) => string",
         "constructors": []
     },
     {
-        "name": "MyMath.add",
+        "name": "example/math.ts//MyMath.add",
         "documentation": "",
         "type": "() => number",
+        "constructors": []
+    },
+    {
+        "name": "add",
+        "documentation": "",
+        "type": "(a: string, b: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "add2",
+        "documentation": "",
+        "type": "(a: string, b: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "add3",
+        "documentation": "",
+        "type": "(a: string, b: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "z",
+        "documentation": "",
+        "type": "number",
+        "constructors": []
+    },
+    {
+        "name": "adder",
+        "documentation": "",
+        "type": "(a: string, b: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "MyWords",
+        "documentation": "",
+        "type": "typeof MyWords",
+        "constructors": [
+            {
+                "parameters": [
+                    {
+                        "name": "a",
+                        "documentation": "",
+                        "type": "string"
+                    },
+                    {
+                        "name": "b",
+                        "documentation": "",
+                        "type": "string"
+                    }
+                ],
+                "returnType": "MyWords",
+                "documentation": ""
+            }
+        ]
+    },
+    {
+        "name": "example/words.ts//MyWords.foo",
+        "documentation": "",
+        "type": "number",
+        "constructors": []
+    },
+    {
+        "name": "example/words.ts//MyWords.blub",
+        "documentation": "",
+        "type": "(x: string) => string",
+        "constructors": []
+    },
+    {
+        "name": "example/words.ts//MyWords.add",
+        "documentation": "",
+        "type": "() => string",
         "constructors": []
     }
 ]
