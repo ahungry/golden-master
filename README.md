@@ -63,6 +63,14 @@ describe('example/math.ts', () => {
 
 ```
 
+# TODO
+
+- Automatically created class instances based on their constructor
+  signature
+- Handle complex types beyond just number/string, with something such
+  as lookups of nested types (chained)
+- Allow user customizations of range values etc.
+
 # License
 
 GPLv3 or later
