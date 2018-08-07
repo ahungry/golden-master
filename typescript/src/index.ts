@@ -10,7 +10,8 @@ const genTargets = generateDocumentation(process.argv.slice(2), {
 })
 
 const getRandomNumber = (): number => {
-  let base = Math.random() * 10000000
+  // Simpler to read test numbers for demo purposes.
+  let base = Math.floor(Math.random() * 10) + 1
 
   if (base % 2) base *= -1
 

@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`example/math.ts add Will match a known snapshot thanks to golden master (-564915.9890311562, -3705930.883073847). 1`] = `-4270846.872105003`;
+exports[`example/math.ts add Will match a known snapshot thanks to golden master (8, -5). 1`] = `3`;
 
-exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (-5266716.504558433, -7047061.215266375). 1`] = `-12313777.719824808`;
+exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (4, -9). 1`] = `-5`;
 
-exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (-3438238.7250495097, -9648150.408957645). 1`] = `-13086389.134007156`;
+exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (2, 4). 1`] = `6`;
 
 exports[`example/words.ts add Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
 
