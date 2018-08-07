@@ -1,144 +1,148 @@
-[
-    {
-        "name": "add",
-        "documentation": "",
-        "type": "(a: number, b: number) => number",
-        "constructors": []
-    },
-    {
-        "name": "add2",
-        "documentation": "",
-        "type": "(a: number, b: number) => number",
-        "constructors": []
-    },
-    {
-        "name": "add3",
-        "documentation": "",
-        "type": "(a: number, b: number) => number",
-        "constructors": []
-    },
-    {
-        "name": "z",
-        "documentation": "",
-        "type": "number",
-        "constructors": []
-    },
-    {
-        "name": "adder",
-        "documentation": "",
-        "type": "(a: number, b: number) => number",
-        "constructors": []
-    },
-    {
-        "name": "MyMath",
-        "documentation": "",
-        "type": "typeof MyMath",
-        "constructors": [
-            {
-                "parameters": [
-                    {
-                        "name": "a",
-                        "documentation": "",
-                        "type": "number"
-                    },
-                    {
-                        "name": "b",
-                        "documentation": "",
-                        "type": "number"
-                    }
-                ],
-                "returnType": "MyMath",
-                "documentation": ""
-            }
-        ]
-    },
-    {
-        "name": "example/math.ts//MyMath.foo",
-        "documentation": "",
-        "type": "number",
-        "constructors": []
-    },
-    {
-        "name": "example/math.ts//MyMath.blub",
-        "documentation": "",
-        "type": "(x: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "example/math.ts//MyMath.add",
-        "documentation": "",
-        "type": "() => number",
-        "constructors": []
-    },
-    {
-        "name": "add",
-        "documentation": "",
-        "type": "(a: string, b: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "add2",
-        "documentation": "",
-        "type": "(a: string, b: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "add3",
-        "documentation": "",
-        "type": "(a: string, b: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "z",
-        "documentation": "",
-        "type": "number",
-        "constructors": []
-    },
-    {
-        "name": "adder",
-        "documentation": "",
-        "type": "(a: string, b: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "MyWords",
-        "documentation": "",
-        "type": "typeof MyWords",
-        "constructors": [
-            {
-                "parameters": [
-                    {
-                        "name": "a",
-                        "documentation": "",
-                        "type": "string"
-                    },
-                    {
-                        "name": "b",
-                        "documentation": "",
-                        "type": "string"
-                    }
-                ],
-                "returnType": "MyWords",
-                "documentation": ""
-            }
-        ]
-    },
-    {
-        "name": "example/words.ts//MyWords.foo",
-        "documentation": "",
-        "type": "number",
-        "constructors": []
-    },
-    {
-        "name": "example/words.ts//MyWords.blub",
-        "documentation": "",
-        "type": "(x: string) => string",
-        "constructors": []
-    },
-    {
-        "name": "example/words.ts//MyWords.add",
-        "documentation": "",
-        "type": "() => string",
-        "constructors": []
-    }
-]
+{
+    "example/math.ts": [
+        {
+            "name": "add",
+            "documentation": "",
+            "type": "(a: number, b: number) => number",
+            "constructors": []
+        },
+        {
+            "name": "add2",
+            "documentation": "",
+            "type": "(a: number, b: number) => number",
+            "constructors": []
+        },
+        {
+            "name": "add3",
+            "documentation": "",
+            "type": "(a: number, b: number) => number",
+            "constructors": []
+        },
+        {
+            "name": "z",
+            "documentation": "",
+            "type": "number",
+            "constructors": []
+        },
+        {
+            "name": "adder",
+            "documentation": "",
+            "type": "(a: number, b: number) => number",
+            "constructors": []
+        },
+        {
+            "name": "MyMath",
+            "documentation": "",
+            "type": "typeof MyMath",
+            "constructors": [
+                {
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "documentation": "",
+                            "type": "number"
+                        },
+                        {
+                            "name": "b",
+                            "documentation": "",
+                            "type": "number"
+                        }
+                    ],
+                    "returnType": "MyMath",
+                    "documentation": ""
+                }
+            ]
+        },
+        {
+            "name": "MyMath.foo",
+            "documentation": "",
+            "type": "number",
+            "constructors": []
+        },
+        {
+            "name": "MyMath.blub",
+            "documentation": "",
+            "type": "(x: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "MyMath.add",
+            "documentation": "",
+            "type": "() => number",
+            "constructors": []
+        }
+    ],
+    "example/words.ts": [
+        {
+            "name": "add",
+            "documentation": "",
+            "type": "(a: string, b: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "add2",
+            "documentation": "",
+            "type": "(a: string, b: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "add3",
+            "documentation": "",
+            "type": "(a: string, b: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "z",
+            "documentation": "",
+            "type": "number",
+            "constructors": []
+        },
+        {
+            "name": "adder",
+            "documentation": "",
+            "type": "(a: string, b: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "MyWords",
+            "documentation": "",
+            "type": "typeof MyWords",
+            "constructors": [
+                {
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "documentation": "",
+                            "type": "string"
+                        },
+                        {
+                            "name": "b",
+                            "documentation": "",
+                            "type": "string"
+                        }
+                    ],
+                    "returnType": "MyWords",
+                    "documentation": ""
+                }
+            ]
+        },
+        {
+            "name": "MyWords.foo",
+            "documentation": "",
+            "type": "number",
+            "constructors": []
+        },
+        {
+            "name": "MyWords.blub",
+            "documentation": "",
+            "type": "(x: string) => string",
+            "constructors": []
+        },
+        {
+            "name": "MyWords.add",
+            "documentation": "",
+            "type": "() => string",
+            "constructors": []
+        }
+    ]
+}
