@@ -4,7 +4,7 @@ export var add3 = (a: string, b: string): string => a + b
 
 var z = 9
 
-function adder (a: string, b: string): string {
+export function adder (a: string, b: string): string {
   return add(a, b)
 }
 

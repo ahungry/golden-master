@@ -1,36 +1,36 @@
 
-var SUT_example_math_ts = require('../example/math.ts')
+import * as SUT_example_math_ts from '../example/math.ts'
 
 describe('example/math.ts', () => {
-  
+
   describe('add', () => {
-    it('Will match a known snapshot thanks to golden master (8, 10).', async () => {
-      
-      var result = await SUT_example_math_ts.add(8, 10)
+    it('Will match a known snapshot thanks to golden master (2, -5).', async () => {
+
+      var result = await SUT_example_math_ts.add(2, -5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add2', () => {
-    it('Will match a known snapshot thanks to golden master (2, -1).', async () => {
-      
-      var result = await SUT_example_math_ts.add2(2, -1)
+    it('Will match a known snapshot thanks to golden master (10, 10).', async () => {
+
+      var result = await SUT_example_math_ts.add2(10, 10)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add3', () => {
-    it('Will match a known snapshot thanks to golden master (10, 6).', async () => {
-      
-      var result = await SUT_example_math_ts.add3(10, 6)
+    it('Will match a known snapshot thanks to golden master (6, -7).', async () => {
+
+      var result = await SUT_example_math_ts.add3(6, -7)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('adder', () => {
-    it('Will match a known snapshot thanks to golden master (-3, -9).', async () => {
-      
-      var result = await SUT_example_math_ts.adder(-3, -9)
+    it('Will match a known snapshot thanks to golden master (4, -3).', async () => {
+
+      var result = await SUT_example_math_ts.adder(4, -3)
       expect(result).toMatchSnapshot()
     })
   })
@@ -53,13 +53,13 @@ describe('example/math.ts', () => {
 
 })
 
-var SUT_example_words_ts = require('../example/words.ts')
+import * as SUT_example_words_ts from '../example/words'
 
 describe('example/words.ts', () => {
-  
+
   describe('add', () => {
     it('Will match a known snapshot thanks to golden master ("dog", "dog").', async () => {
-      
+
       var result = await SUT_example_words_ts.add('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
@@ -67,7 +67,7 @@ describe('example/words.ts', () => {
 
   describe('add2', () => {
     it('Will match a known snapshot thanks to golden master ("dog", "dog").', async () => {
-      
+
       var result = await SUT_example_words_ts.add2('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
@@ -75,7 +75,7 @@ describe('example/words.ts', () => {
 
   describe('add3', () => {
     it('Will match a known snapshot thanks to golden master ("dog", "dog").', async () => {
-      
+
       var result = await SUT_example_words_ts.add3('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
@@ -83,7 +83,7 @@ describe('example/words.ts', () => {
 
   describe('adder', () => {
     it('Will match a known snapshot thanks to golden master ("dog", "dog").', async () => {
-      
+
       var result = await SUT_example_words_ts.adder('dog', 'dog')
       expect(result).toMatchSnapshot()
     })
@@ -106,4 +106,3 @@ describe('example/words.ts', () => {
   })
 
 })
-

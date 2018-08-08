@@ -72,7 +72,7 @@ files.map((fn) => {
 
   // TODO: Make the dot prefix user based for relative paths
   out += `
-var SUT_${cleanFn} = require('../${fn}')
+import * as SUT_${cleanFn} from '../${fn}'
 
 describe('${fn}', () => {
   ${fnTestOut}
