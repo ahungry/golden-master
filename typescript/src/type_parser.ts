@@ -45,9 +45,9 @@ export function generateDocumentation (
   /** visit nodes finding exported classes */
   function visit (node: ts.Node, namePrefix: string = '') {
     // Only consider exported nodes (comment out to include class methods)
-    // if (!isNodeExported(node)) {
-    //   return
-    // }
+    if (!isNodeExported(node)) {
+      return
+    }
 
     if (ts.isClassDeclaration(node) && node.name) {
       // This is a top level class, get its symbol
@@ -116,8 +116,14 @@ export function generateDocumentation (
   /** True if this is visible outside this file, false otherwise */
   function isNodeExported (node: ts.Node): boolean {
     return (
+      // If the node itself is exported
       (ts.getCombinedModifierFlags(node as any) & ts.ModifierFlags.Export) !== 0 ||
-      (!!node.parent && node.parent.kind === ts.SyntaxKind.SourceFile)
+      // Or its got a parent of class declaration type that is exported
+      (!!node.parent && node.parent.kind === ts.SyntaxKind.ClassDeclaration &&
+        (ts.getCombinedModifierFlags(node.parent as any) & ts.ModifierFlags.Export) !== 0)
     )
+    // This doesn't seem to work, it was from the sample
+    // (ts.getCombinedModifierFlags(node as any) & ts.ModifierFlags.Export) !== 0 ||
+    // (!!node.parent && node.parent.kind === ts.SyntaxKind.SourceFile)
   }
 }

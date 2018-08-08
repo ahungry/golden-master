@@ -19,18 +19,6 @@
             "constructors": []
         },
         {
-            "name": "z",
-            "documentation": "",
-            "type": "number",
-            "constructors": []
-        },
-        {
-            "name": "adder",
-            "documentation": "",
-            "type": "(a: number, b: number) => number",
-            "constructors": []
-        },
-        {
             "name": "MyMath",
             "documentation": "",
             "type": "typeof MyMath",
@@ -89,12 +77,6 @@
             "name": "add3",
             "documentation": "",
             "type": "(a: string, b: string) => string",
-            "constructors": []
-        },
-        {
-            "name": "z",
-            "documentation": "",
-            "type": "number",
             "constructors": []
         },
         {

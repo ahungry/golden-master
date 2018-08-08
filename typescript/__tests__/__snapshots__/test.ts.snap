@@ -4,13 +4,11 @@ exports[`example/math.ts MyMath.add Will match a known snapshot thanks to golden
 
 exports[`example/math.ts MyMath.blub Will match a known snapshot thanks to golden master ("dog"). 1`] = `"dog"`;
 
-exports[`example/math.ts add Will match a known snapshot thanks to golden master (8, 4). 1`] = `12`;
+exports[`example/math.ts add Will match a known snapshot thanks to golden master (-3, 8). 1`] = `5`;
 
-exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (2, -9). 1`] = `-7`;
+exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (-5, -9). 1`] = `-14`;
 
-exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (-1, 4). 1`] = `3`;
-
-exports[`example/math.ts adder Will match a known snapshot thanks to golden master (-9, -5). 1`] = `-14`;
+exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (-7, 4). 1`] = `-3`;
 
 exports[`example/words.ts MyWords.add Will match a known snapshot thanks to golden master (). 1`] = `"dogcat"`;
 

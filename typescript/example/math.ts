@@ -4,7 +4,7 @@ export var add3 = (a: number, b: number): number => a + b
 
 var z = 9
 
-export function adder (a: number, b: number): number {
+function adder (a: number, b: number): number {
   return add(a, b)
 }
 
