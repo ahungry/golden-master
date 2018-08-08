@@ -4,29 +4,29 @@ import * as SUT_example_math_ts from '../example/math.ts'
 describe('example/math.ts', () => {
   
   describe('add', () => {
-    it('Will match a known snapshot thanks to golden master (8, -5).', async () => {
-      const result = await SUT_example_math_ts.add(8, -5)
+    it('Will match a known snapshot thanks to golden master (4, -9).', async () => {
+      const result = await SUT_example_math_ts.add(4, -9)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add2', () => {
-    it('Will match a known snapshot thanks to golden master (4, -9).', async () => {
-      const result = await SUT_example_math_ts.add2(4, -9)
+    it('Will match a known snapshot thanks to golden master (10, -5).', async () => {
+      const result = await SUT_example_math_ts.add2(10, -5)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add3', () => {
-    it('Will match a known snapshot thanks to golden master (2, 4).', async () => {
-      const result = await SUT_example_math_ts.add3(2, 4)
+    it('Will match a known snapshot thanks to golden master (-5, 8).', async () => {
+      const result = await SUT_example_math_ts.add3(-5, 8)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('adder', () => {
-    it('Will match a known snapshot thanks to golden master (6, -5).', async () => {
-      const result = await SUT_example_math_ts.adder(6, -5)
+    it('Will match a known snapshot thanks to golden master (8, 4).', async () => {
+      const result = await SUT_example_math_ts.adder(8, 4)
       expect(result).toMatchSnapshot()
     })
   })
