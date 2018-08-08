@@ -39,7 +39,7 @@ files.map((fn) => {
     let instance = ''
 
     if (isMethod(doc)) {
-      // console.log('Found the method')
+      // TODO: Query out the source class for the constructor args.
       const className = getMethodClass(doc)
       instance = `var My_${className} = new SUT_${cleanFn}.${className}()`
     }
