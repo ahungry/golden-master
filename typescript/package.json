@@ -5,7 +5,7 @@
   "license": "GPL-3.0-with-autoconf-exception",
   "private": false,
   "scripts": {
-    "go": "rm -fr __tests__/* ; tsc && node ./dist/src/index.js example/math.ts example/words.ts  > __tests__/test.ts  && yarn test",
+    "go": "rm -fr __tests__/* ; tsc && node ./dist/src/index.js example/math.ts example/words.ts  > __tests__/test.js  && yarn test",
     "test": "NODE_ENV=test jest --env=node"
   },
   "devDependencies": {

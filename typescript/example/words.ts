@@ -12,7 +12,7 @@ export class MyWords {
   public foo = 3
   public blub = (x: string): string => x
 
-  constructor (private a: string, private b: string) {
+  constructor (private a: string = 'dog', private b: string = 'cat') {
   }
 
   public add () {

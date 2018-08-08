@@ -12,7 +12,7 @@ export class MyMath {
   public foo = 3
   public blub = (x: string): string => x
 
-  constructor (private a: number, private b: number) {
+  constructor (private a: number = 1, private b: number = 2) {
   }
 
   public add () {
