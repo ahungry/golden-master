@@ -19,6 +19,12 @@
             "constructors": []
         },
         {
+            "name": "pointDistance",
+            "documentation": "",
+            "type": "(p1: Point, p2: Point) => number",
+            "constructors": []
+        },
+        {
             "name": "MyMath",
             "documentation": "",
             "type": "typeof MyMath",

@@ -17,7 +17,10 @@ const getRandomNumbers = (): number[] => {
 
   // Do a couple randoms in here as well
   for (let i = 0; i < 3; i++) {
-    nums.push(getRandomNumber())
+    // For now, disabling random generation so we can easily follow
+    // the generated diff - but if you use this, maybe you want to test.
+    // nums.push(getRandomNumber())
+    nums.push(42)
   }
 
   return nums
@@ -30,14 +33,31 @@ const getString = (): string[] => {
   return [
     "'a,b,c,d'",
     "'hello world'",
-    "'fish'",
     "'Matthew Carter'",
     "'tHiS iS sOmE cRaZy fOrMaT'",
+  ]
+}
+
+export interface Point {
+  x: number
+  y: number
+}
+
+// Remember - these should be able to interpolate as literal objects,
+// so here they need to be the string quoted object literal.
+// Maybe it could be a function call to pull it in dynamically,
+// and we can allow user supplied imports at the top of test file to
+// assist with this.
+const getToThePointAlready = (): string[] => {
+  return [
+    '{ x: 1, y: 2 }',
+    '{ x: 3, y: 4 }',
   ]
 }
 
 export const typeProvider: TypeProvider = {
   default: () => ['undefined'],
   number: getRandomNumbers,
+  Point: getToThePointAlready,
   string: getString,
 }
