@@ -1,5 +1,5 @@
 export interface TypeProvider {
-  [key: string]: () => Array<any>
+  [key: string]: () => Array<string>
 }
 
 const getRandomNumber = (): number => {
@@ -11,7 +11,7 @@ const getRandomNumber = (): number => {
   return base
 }
 
-const getRandomNumbers = (): number[] => {
+const getRandomNumbers = (): string[] => {
   // Return some known good testables
   let nums: number[] = [0, -1, 1, NaN]
 
@@ -23,7 +23,7 @@ const getRandomNumbers = (): number[] => {
     nums.push(42)
   }
 
-  return nums
+  return nums.map(n => String(n))
 }
 
 // We could return a variety of strings, lower and upper, space separated
