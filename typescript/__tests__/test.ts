@@ -4,25 +4,25 @@ import * as SUT_example_math_ts from '../example/math.ts'
 describe('example/math.ts', () => {
   
   describe('add', () => {
-    it('Will match a known snapshot thanks to golden master (-3, 8).', async () => {
+    it('Will match a known snapshot thanks to golden master (-3, -1).', async () => {
       
-      var result = await SUT_example_math_ts.add(-3, 8)
+      var result = await SUT_example_math_ts.add(-3, -1)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add2', () => {
-    it('Will match a known snapshot thanks to golden master (-5, -9).', async () => {
+    it('Will match a known snapshot thanks to golden master (4, -3).', async () => {
       
-      var result = await SUT_example_math_ts.add2(-5, -9)
+      var result = await SUT_example_math_ts.add2(4, -3)
       expect(result).toMatchSnapshot()
     })
   })
 
   describe('add3', () => {
-    it('Will match a known snapshot thanks to golden master (-7, 4).', async () => {
+    it('Will match a known snapshot thanks to golden master (-7, -3).', async () => {
       
-      var result = await SUT_example_math_ts.add3(-7, 4)
+      var result = await SUT_example_math_ts.add3(-7, -3)
       expect(result).toMatchSnapshot()
     })
   })
@@ -36,9 +36,9 @@ describe('example/math.ts', () => {
   })
 
   describe('MyMath.add', () => {
-    it('Will match a known snapshot thanks to golden master ().', async () => {
+    it('Will match a known snapshot thanks to golden master ("dog").', async () => {
       var My_MyMath = new SUT_example_math_ts.MyMath()
-      var result = await My_MyMath.add()
+      var result = await My_MyMath.add('dog')
       expect(result).toMatchSnapshot()
     })
   })
@@ -90,9 +90,9 @@ describe('example/words.ts', () => {
   })
 
   describe('MyWords.add', () => {
-    it('Will match a known snapshot thanks to golden master ().', async () => {
+    it('Will match a known snapshot thanks to golden master ("dog").', async () => {
       var My_MyWords = new SUT_example_words_ts.MyWords()
-      var result = await My_MyWords.add()
+      var result = await My_MyWords.add('dog')
       expect(result).toMatchSnapshot()
     })
   })
