@@ -1,6 +1,7 @@
 export const add = (a: string, b: string): string => a + b
 export let add2 = (a: string, b: string): string => a + b
 export var add3 = (a: string, b: string): string => a + b
+export const add4 = (a: number, b: string): string => String(a) + b
 
 var z = 9
 

@@ -1,23 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`example/math.ts MyMath.add Will match a known snapshot thanks to golden master ("dog"). 1`] = `3`;
+exports[`example/math.ts MyMath.add Will match a known snapshot (undefined). 1`] = `3`;
 
-exports[`example/math.ts MyMath.blub Will match a known snapshot thanks to golden master ("dog"). 1`] = `"dog"`;
+exports[`example/math.ts MyMath.blub Will match a known snapshot ("cat"). 1`] = `"cat"`;
 
-exports[`example/math.ts add Will match a known snapshot thanks to golden master (-3, -1). 1`] = `-4`;
+exports[`example/math.ts MyMath.blub Will match a known snapshot ("dog"). 1`] = `"dog"`;
 
-exports[`example/math.ts add2 Will match a known snapshot thanks to golden master (4, -3). 1`] = `1`;
+exports[`example/math.ts MyMath.blub Will match a known snapshot ("fish"). 1`] = `"fish"`;
 
-exports[`example/math.ts add3 Will match a known snapshot thanks to golden master (-7, -3). 1`] = `-10`;
+exports[`example/math.ts add Will match a known snapshot (-5,8). 1`] = `3`;
 
-exports[`example/words.ts MyWords.add Will match a known snapshot thanks to golden master ("dog"). 1`] = `"dogcat"`;
+exports[`example/math.ts add Will match a known snapshot (-7,-9). 1`] = `-16`;
 
-exports[`example/words.ts MyWords.blub Will match a known snapshot thanks to golden master ("dog"). 1`] = `"dog"`;
+exports[`example/math.ts add Will match a known snapshot (-7,6). 1`] = `-1`;
 
-exports[`example/words.ts add Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+exports[`example/math.ts add Will match a known snapshot (2,-5). 1`] = `-3`;
 
-exports[`example/words.ts add2 Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+exports[`example/math.ts add Will match a known snapshot (2,-9). 1`] = `-7`;
 
-exports[`example/words.ts add3 Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+exports[`example/math.ts add Will match a known snapshot (6,-7). 1`] = `-1`;
 
-exports[`example/words.ts adder Will match a known snapshot thanks to golden master ("dog", "dog"). 1`] = `"dogdog"`;
+exports[`example/math.ts add Will match a known snapshot (6,-7). 2`] = `-1`;
+
+exports[`example/math.ts add Will match a known snapshot (8,-7). 1`] = `1`;
+
+exports[`example/math.ts add Will match a known snapshot (8,8). 1`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-7). 1`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-1,2). 1`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-9). 1`] = `-14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-5). 1`] = `-12`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,6). 1`] = `8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-7). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-9). 1`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,10). 1`] = `16`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,-1). 1`] = `7`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,6). 1`] = `14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (10,6). 1`] = `16`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-1,-5). 1`] = `-6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,8). 1`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 1`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 1`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,10). 1`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-9). 1`] = `-7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,2). 1`] = `4`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,2). 2`] = `4`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,6). 1`] = `14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (10,-3). 1`] = `7`;
+
+exports[`example/words.ts MyWords.add Will match a known snapshot (undefined). 1`] = `"dogcat"`;
+
+exports[`example/words.ts MyWords.blub Will match a known snapshot ("cat"). 1`] = `"cat"`;
+
+exports[`example/words.ts MyWords.blub Will match a known snapshot ("dog"). 1`] = `"dog"`;
+
+exports[`example/words.ts MyWords.blub Will match a known snapshot ("fish"). 1`] = `"fish"`;
+
+exports[`example/words.ts add Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
+
+exports[`example/words.ts add Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-3,). 1`] = `"-3undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-3,). 2`] = `"-3undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-3,). 3`] = `"-3undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-7,). 1`] = `"-7undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (2,"dog"). 1`] = `"2dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (4,"cat"). 1`] = `"4cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (4,). 1`] = `"4undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (4,). 2`] = `"4undefined"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (10,"fish"). 1`] = `"10fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (10,). 1`] = `"10undefined"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;

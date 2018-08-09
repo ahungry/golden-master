@@ -36,22 +36,47 @@ export const testGenerator = (
 
       if (m === null || m.length < 1) return
 
+      fnTestOut += `
+  describe('${doc.name}', () => {`
+
+      // We should find the arg map of all types and loop over them for test cases.
       const params = m[1].split(',').map((p) => p.split(':')).map((t) => {
         const paramType = String(t[1]).replace(/[^A-Za-z_0-9]/g, '').trim()
 
-        return typeProvider[paramType] === undefined
-          ? typeProvider['default']()[0] : typeProvider[paramType]()[0]
-      }).join(', ')
+        return paramType
+      })
 
-      let prefix = instance.length > 0 ? 'My_' : `SUT_${cleanFn}.`
+      // Now, we have an array of the types going in, we should build an 'it' for all combos.
+      const slotValues: Array<Array<any>> = []
+
+      for (let c = 0; c < params.length; c++) {
+        const pType = params[c]
+
+        slotValues.push(typeProvider[pType] === undefined
+          ? typeProvider['default']()
+          : typeProvider[pType]())
+      }
+
+      for (let c = 0; c < slotValues[0].length; c++) {
+        let args: string[] = []
+
+        for (let p = 0; p < params.length; p++) {
+          args.push(slotValues[p][c])
+        }
+
+        let argString = args.join(',')
+        let prefix = instance.length > 0 ? 'My_' : `SUT_${cleanFn}.`
+        let nl = instance.length > 0 ? '\n      ' : ''
+
+        fnTestOut += `
+
+    it('Will match a known snapshot (${argString.replace(/'/g, '"')}).', async () => {
+      ${instance}${nl}var result = await ${prefix}${doc.name}(${argString})
+      expect(result).toMatchSnapshot()
+    })`
+      }
 
       fnTestOut += `
-  describe('${doc.name}', () => {
-    it('Will match a known snapshot thanks to golden master (${params.replace(/'/g, '"')}).', async () => {
-      ${instance}
-      var result = await ${prefix}${doc.name}(${params})
-      expect(result).toMatchSnapshot()
-    })
   })
 `
     })

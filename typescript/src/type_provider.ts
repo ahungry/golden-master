@@ -25,7 +25,7 @@ const getString = (): string[] => {
 }
 
 export const typeProvider: TypeProvider = {
-  default: getString,
+  default: () => ['undefined'],
   number: getRandomNumbers,
   string: getString,
 }

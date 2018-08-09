@@ -80,6 +80,12 @@
             "constructors": []
         },
         {
+            "name": "add4",
+            "documentation": "",
+            "type": "(a: number, b: string) => string",
+            "constructors": []
+        },
+        {
             "name": "adder",
             "documentation": "",
             "type": "(a: string, b: string) => string",
