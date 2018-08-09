@@ -1,7 +1,9 @@
+import * as p from 'process'
 import * as R from 'ramda'
 
 import { DocEntry } from './type_parser'
 import { TypeProvider } from './type_provider'
+import { powerSet } from './powerset'
 
 const getCleanFn = (s: string): string => s.replace(/[^A-Za-z]/g, '_')
 const isMethod = (d: DocEntry): boolean => /^.*\..*$/.test(String(d.name))
@@ -57,18 +59,13 @@ export const testGenerator = (
           : typeProvider[pType]())
       }
 
-      for (let c = 0; c < slotValues[0].length; c++) {
-        let args: string[] = []
-
-        for (let p = 0; p < params.length; p++) {
-          args.push(slotValues[p][c])
-        }
-
+      const pSet = powerSet(slotValues)
+      const itGen = (args: any[]): string => {
         let argString = args.join(',')
         let prefix = instance.length > 0 ? 'My_' : `SUT_${cleanFn}.`
         let nl = instance.length > 0 ? '\n      ' : ''
 
-        fnTestOut += `
+        return `
 
     it('Will match a known snapshot (${argString.replace(/'/g, '"')}).', async () => {
       ${instance}${nl}var result = await ${prefix}${doc.name}(${argString})
@@ -76,6 +73,7 @@ export const testGenerator = (
     })`
       }
 
+      fnTestOut += R.map(itGen, pSet).join('')
       fnTestOut += `
   })
 `

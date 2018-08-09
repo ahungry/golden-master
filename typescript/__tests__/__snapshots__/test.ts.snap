@@ -1,121 +1,733 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`example/math.ts MyMath.add Will match a known snapshot (undefined). 1`] = `3`;
+exports[`example/math.ts add Will match a known snapshot (-1,-1). 1`] = `-2`;
 
-exports[`example/math.ts MyMath.blub Will match a known snapshot ("cat"). 1`] = `"cat"`;
+exports[`example/math.ts add Will match a known snapshot (-1,-1). 2`] = `-2`;
 
-exports[`example/math.ts MyMath.blub Will match a known snapshot ("dog"). 1`] = `"dog"`;
+exports[`example/math.ts add Will match a known snapshot (-1,-1). 3`] = `-2`;
 
-exports[`example/math.ts MyMath.blub Will match a known snapshot ("fish"). 1`] = `"fish"`;
+exports[`example/math.ts add Will match a known snapshot (-1,-3). 1`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,-7). 1`] = `-8`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,4). 1`] = `3`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,6). 1`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,8). 1`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,8). 2`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (-1,10). 1`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 1`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 2`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 3`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 4`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 5`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-1). 6`] = `-4`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-3). 1`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-3). 2`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-7). 1`] = `-10`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,-7). 2`] = `-10`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,4). 1`] = `1`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,4). 2`] = `1`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,6). 1`] = `3`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,6). 2`] = `3`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,8). 1`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,8). 2`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,8). 3`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,8). 4`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,10). 1`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (-3,10). 2`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 1`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 2`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 3`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 4`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 5`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-1). 6`] = `-6`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-3). 1`] = `-8`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-3). 2`] = `-8`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-7). 1`] = `-12`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,-7). 2`] = `-12`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,4). 1`] = `-1`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,4). 2`] = `-1`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,6). 1`] = `1`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,6). 2`] = `1`;
 
 exports[`example/math.ts add Will match a known snapshot (-5,8). 1`] = `3`;
 
-exports[`example/math.ts add Will match a known snapshot (-7,-9). 1`] = `-16`;
+exports[`example/math.ts add Will match a known snapshot (-5,8). 2`] = `3`;
 
-exports[`example/math.ts add Will match a known snapshot (-7,6). 1`] = `-1`;
+exports[`example/math.ts add Will match a known snapshot (-5,8). 3`] = `3`;
 
-exports[`example/math.ts add Will match a known snapshot (2,-5). 1`] = `-3`;
+exports[`example/math.ts add Will match a known snapshot (-5,8). 4`] = `3`;
 
-exports[`example/math.ts add Will match a known snapshot (2,-9). 1`] = `-7`;
+exports[`example/math.ts add Will match a known snapshot (-5,10). 1`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-5,10). 2`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,-1). 1`] = `-10`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,-1). 2`] = `-10`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,-1). 3`] = `-10`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,-3). 1`] = `-12`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,-7). 1`] = `-16`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,4). 1`] = `-5`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,6). 1`] = `-3`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,8). 1`] = `-1`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,8). 2`] = `-1`;
+
+exports[`example/math.ts add Will match a known snapshot (-9,10). 1`] = `1`;
+
+exports[`example/math.ts add Will match a known snapshot (6,-1). 1`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (6,-1). 2`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (6,-1). 3`] = `5`;
+
+exports[`example/math.ts add Will match a known snapshot (6,-3). 1`] = `3`;
 
 exports[`example/math.ts add Will match a known snapshot (6,-7). 1`] = `-1`;
 
-exports[`example/math.ts add Will match a known snapshot (6,-7). 2`] = `-1`;
+exports[`example/math.ts add Will match a known snapshot (6,4). 1`] = `10`;
+
+exports[`example/math.ts add Will match a known snapshot (6,6). 1`] = `12`;
+
+exports[`example/math.ts add Will match a known snapshot (6,8). 1`] = `14`;
+
+exports[`example/math.ts add Will match a known snapshot (6,8). 2`] = `14`;
+
+exports[`example/math.ts add Will match a known snapshot (6,10). 1`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (8,-1). 1`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (8,-1). 2`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (8,-1). 3`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (8,-3). 1`] = `5`;
 
 exports[`example/math.ts add Will match a known snapshot (8,-7). 1`] = `1`;
 
+exports[`example/math.ts add Will match a known snapshot (8,4). 1`] = `12`;
+
+exports[`example/math.ts add Will match a known snapshot (8,6). 1`] = `14`;
+
 exports[`example/math.ts add Will match a known snapshot (8,8). 1`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (8,8). 2`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (8,10). 1`] = `18`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 1`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 2`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 3`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 4`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 5`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-1). 6`] = `9`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-3). 1`] = `7`;
+
+exports[`example/math.ts add Will match a known snapshot (10,-3). 2`] = `7`;
 
 exports[`example/math.ts add Will match a known snapshot (10,-7). 1`] = `3`;
 
-exports[`example/math.ts add2 Will match a known snapshot (-1,2). 1`] = `1`;
+exports[`example/math.ts add Will match a known snapshot (10,-7). 2`] = `3`;
+
+exports[`example/math.ts add Will match a known snapshot (10,4). 1`] = `14`;
+
+exports[`example/math.ts add Will match a known snapshot (10,4). 2`] = `14`;
+
+exports[`example/math.ts add Will match a known snapshot (10,6). 1`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (10,6). 2`] = `16`;
+
+exports[`example/math.ts add Will match a known snapshot (10,8). 1`] = `18`;
+
+exports[`example/math.ts add Will match a known snapshot (10,8). 2`] = `18`;
+
+exports[`example/math.ts add Will match a known snapshot (10,8). 3`] = `18`;
+
+exports[`example/math.ts add Will match a known snapshot (10,8). 4`] = `18`;
+
+exports[`example/math.ts add Will match a known snapshot (10,10). 1`] = `20`;
+
+exports[`example/math.ts add Will match a known snapshot (10,10). 2`] = `20`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,-1). 1`] = `-4`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,-3). 1`] = `-6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,-3). 2`] = `-6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,-9). 1`] = `-12`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,2). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,4). 1`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,4). 2`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,6). 1`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,8). 1`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-3,8). 2`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-1). 1`] = `-6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-1). 2`] = `-6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-3). 1`] = `-8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-3). 2`] = `-8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-3). 3`] = `-8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,-3). 4`] = `-8`;
 
 exports[`example/math.ts add2 Will match a known snapshot (-5,-9). 1`] = `-14`;
 
-exports[`example/math.ts add2 Will match a known snapshot (-7,-5). 1`] = `-12`;
+exports[`example/math.ts add2 Will match a known snapshot (-5,-9). 2`] = `-14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,2). 1`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,2). 2`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,4). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,4). 2`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,4). 3`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,4). 4`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,6). 1`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,6). 2`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,8). 1`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,8). 2`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,8). 3`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-5,8). 4`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-1). 1`] = `-8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-1). 2`] = `-8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-3). 1`] = `-10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-3). 2`] = `-10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-3). 3`] = `-10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-3). 4`] = `-10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-9). 1`] = `-16`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,-9). 2`] = `-16`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,2). 1`] = `-5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,2). 2`] = `-5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,4). 1`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,4). 2`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,4). 3`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,4). 4`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,6). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,6). 2`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,8). 1`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,8). 2`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,8). 3`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (-7,8). 4`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-1). 1`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-1). 2`] = `1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-3). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-3). 2`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-3). 3`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-3). 4`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-9). 1`] = `-7`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,-9). 2`] = `-7`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,2). 1`] = `4`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,2). 2`] = `4`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,4). 1`] = `6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,4). 2`] = `6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,4). 3`] = `6`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,4). 4`] = `6`;
 
 exports[`example/math.ts add2 Will match a known snapshot (2,6). 1`] = `8`;
 
-exports[`example/math.ts add2 Will match a known snapshot (6,-7). 1`] = `-1`;
+exports[`example/math.ts add2 Will match a known snapshot (2,6). 2`] = `8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,8). 1`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,8). 2`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,8). 3`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (2,8). 4`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-1). 1`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-1). 2`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-3). 1`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-3). 2`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-3). 3`] = `3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,-3). 4`] = `3`;
 
 exports[`example/math.ts add2 Will match a known snapshot (6,-9). 1`] = `-3`;
 
-exports[`example/math.ts add2 Will match a known snapshot (6,10). 1`] = `16`;
+exports[`example/math.ts add2 Will match a known snapshot (6,-9). 2`] = `-3`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,2). 1`] = `8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,2). 2`] = `8`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,4). 1`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,4). 2`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,4). 3`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,4). 4`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,6). 1`] = `12`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,6). 2`] = `12`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,8). 1`] = `14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,8). 2`] = `14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,8). 3`] = `14`;
+
+exports[`example/math.ts add2 Will match a known snapshot (6,8). 4`] = `14`;
 
 exports[`example/math.ts add2 Will match a known snapshot (8,-1). 1`] = `7`;
 
+exports[`example/math.ts add2 Will match a known snapshot (8,-3). 1`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,-3). 2`] = `5`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,-9). 1`] = `-1`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,2). 1`] = `10`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,4). 1`] = `12`;
+
+exports[`example/math.ts add2 Will match a known snapshot (8,4). 2`] = `12`;
+
 exports[`example/math.ts add2 Will match a known snapshot (8,6). 1`] = `14`;
 
-exports[`example/math.ts add2 Will match a known snapshot (10,6). 1`] = `16`;
+exports[`example/math.ts add2 Will match a known snapshot (8,8). 1`] = `16`;
 
-exports[`example/math.ts add3 Will match a known snapshot (-1,-5). 1`] = `-6`;
+exports[`example/math.ts add2 Will match a known snapshot (8,8). 2`] = `16`;
 
-exports[`example/math.ts add3 Will match a known snapshot (-3,8). 1`] = `5`;
+exports[`example/math.ts add3 Will match a known snapshot (-3,-1). 1`] = `-4`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,-5). 1`] = `-8`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,-5). 2`] = `-8`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,-9). 1`] = `-12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,-9). 2`] = `-12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,2). 1`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,4). 1`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,6). 1`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,10). 1`] = `7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-3,10). 2`] = `7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-1). 1`] = `-6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-1). 2`] = `-6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-1). 3`] = `-6`;
 
 exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 1`] = `-10`;
 
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 2`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 3`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 4`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 5`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-5). 6`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 1`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 2`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 3`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 4`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 5`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,-9). 6`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,2). 1`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,2). 2`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,2). 3`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,4). 1`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,4). 2`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,4). 3`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,6). 1`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,6). 2`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,6). 3`] = `1`;
+
 exports[`example/math.ts add3 Will match a known snapshot (-5,10). 1`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 2`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 3`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 4`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 5`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-5,10). 6`] = `5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,-1). 1`] = `-10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,-5). 1`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,-5). 2`] = `-14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,-9). 1`] = `-18`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,-9). 2`] = `-18`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,2). 1`] = `-7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,4). 1`] = `-5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (-9,6). 1`] = `-3`;
 
 exports[`example/math.ts add3 Will match a known snapshot (-9,10). 1`] = `1`;
 
+exports[`example/math.ts add3 Will match a known snapshot (-9,10). 2`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-1). 1`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-1). 2`] = `1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-5). 1`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-5). 2`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-5). 3`] = `-3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-5). 4`] = `-3`;
+
 exports[`example/math.ts add3 Will match a known snapshot (2,-9). 1`] = `-7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-9). 2`] = `-7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-9). 3`] = `-7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,-9). 4`] = `-7`;
 
 exports[`example/math.ts add3 Will match a known snapshot (2,2). 1`] = `4`;
 
 exports[`example/math.ts add3 Will match a known snapshot (2,2). 2`] = `4`;
 
+exports[`example/math.ts add3 Will match a known snapshot (2,4). 1`] = `6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,4). 2`] = `6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,6). 1`] = `8`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,6). 2`] = `8`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,10). 1`] = `12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,10). 2`] = `12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,10). 3`] = `12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (2,10). 4`] = `12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,-1). 1`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,-5). 1`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,-5). 2`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,-9). 1`] = `-5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,-9). 2`] = `-5`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,2). 1`] = `6`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,4). 1`] = `8`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,6). 1`] = `10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,10). 1`] = `14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (4,10). 2`] = `14`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-1). 1`] = `7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-1). 2`] = `7`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-5). 1`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-5). 2`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-5). 3`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-5). 4`] = `3`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-9). 1`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-9). 2`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-9). 3`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,-9). 4`] = `-1`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,2). 1`] = `10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,2). 2`] = `10`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,4). 1`] = `12`;
+
+exports[`example/math.ts add3 Will match a known snapshot (8,4). 2`] = `12`;
+
 exports[`example/math.ts add3 Will match a known snapshot (8,6). 1`] = `14`;
 
-exports[`example/math.ts add3 Will match a known snapshot (10,-3). 1`] = `7`;
+exports[`example/math.ts add3 Will match a known snapshot (8,6). 2`] = `14`;
 
-exports[`example/words.ts MyWords.add Will match a known snapshot (undefined). 1`] = `"dogcat"`;
+exports[`example/math.ts add3 Will match a known snapshot (8,10). 1`] = `18`;
 
-exports[`example/words.ts MyWords.blub Will match a known snapshot ("cat"). 1`] = `"cat"`;
+exports[`example/math.ts add3 Will match a known snapshot (8,10). 2`] = `18`;
 
-exports[`example/words.ts MyWords.blub Will match a known snapshot ("dog"). 1`] = `"dog"`;
+exports[`example/math.ts add3 Will match a known snapshot (8,10). 3`] = `18`;
 
-exports[`example/words.ts MyWords.blub Will match a known snapshot ("fish"). 1`] = `"fish"`;
+exports[`example/math.ts add3 Will match a known snapshot (8,10). 4`] = `18`;
 
 exports[`example/words.ts add Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
 
+exports[`example/words.ts add Will match a known snapshot ("cat","dog"). 1`] = `"catdog"`;
+
+exports[`example/words.ts add Will match a known snapshot ("cat","fish"). 1`] = `"catfish"`;
+
+exports[`example/words.ts add Will match a known snapshot ("dog","cat"). 1`] = `"dogcat"`;
+
 exports[`example/words.ts add Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add Will match a known snapshot ("dog","fish"). 1`] = `"dogfish"`;
+
+exports[`example/words.ts add Will match a known snapshot ("fish","cat"). 1`] = `"fishcat"`;
+
+exports[`example/words.ts add Will match a known snapshot ("fish","dog"). 1`] = `"fishdog"`;
 
 exports[`example/words.ts add Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
 
 exports[`example/words.ts add2 Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
 
+exports[`example/words.ts add2 Will match a known snapshot ("cat","dog"). 1`] = `"catdog"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("cat","fish"). 1`] = `"catfish"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("dog","cat"). 1`] = `"dogcat"`;
+
 exports[`example/words.ts add2 Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("dog","fish"). 1`] = `"dogfish"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("fish","cat"). 1`] = `"fishcat"`;
+
+exports[`example/words.ts add2 Will match a known snapshot ("fish","dog"). 1`] = `"fishdog"`;
 
 exports[`example/words.ts add2 Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
 
 exports[`example/words.ts add3 Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
 
+exports[`example/words.ts add3 Will match a known snapshot ("cat","dog"). 1`] = `"catdog"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("cat","fish"). 1`] = `"catfish"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("dog","cat"). 1`] = `"dogcat"`;
+
 exports[`example/words.ts add3 Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("dog","fish"). 1`] = `"dogfish"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("fish","cat"). 1`] = `"fishcat"`;
+
+exports[`example/words.ts add3 Will match a known snapshot ("fish","dog"). 1`] = `"fishdog"`;
 
 exports[`example/words.ts add3 Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (-3,). 1`] = `"-3undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"cat"). 1`] = `"-3cat"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (-3,). 2`] = `"-3undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"cat"). 2`] = `"-3cat"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (-3,). 3`] = `"-3undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"cat"). 3`] = `"-3cat"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (-7,). 1`] = `"-7undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"dog"). 1`] = `"-3dog"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (2,"dog"). 1`] = `"2dog"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"dog"). 2`] = `"-3dog"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (4,"cat"). 1`] = `"4cat"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"dog"). 3`] = `"-3dog"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (4,). 1`] = `"4undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"fish"). 1`] = `"-3fish"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (4,). 2`] = `"4undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"fish"). 2`] = `"-3fish"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (10,"fish"). 1`] = `"10fish"`;
+exports[`example/words.ts add4 Will match a known snapshot (-3,"fish"). 3`] = `"-3fish"`;
 
-exports[`example/words.ts add4 Will match a known snapshot (10,). 1`] = `"10undefined"`;
+exports[`example/words.ts add4 Will match a known snapshot (-5,"cat"). 1`] = `"-5cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-5,"dog"). 1`] = `"-5dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-5,"fish"). 1`] = `"-5fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-7,"cat"). 1`] = `"-7cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-7,"dog"). 1`] = `"-7dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (-7,"fish"). 1`] = `"-7fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (6,"cat"). 1`] = `"6cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (6,"dog"). 1`] = `"6dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (6,"fish"). 1`] = `"6fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"cat"). 1`] = `"8cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"cat"). 2`] = `"8cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"cat"). 3`] = `"8cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"cat"). 4`] = `"8cat"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"dog"). 1`] = `"8dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"dog"). 2`] = `"8dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"dog"). 3`] = `"8dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"dog"). 4`] = `"8dog"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"fish"). 1`] = `"8fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"fish"). 2`] = `"8fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"fish"). 3`] = `"8fish"`;
+
+exports[`example/words.ts add4 Will match a known snapshot (8,"fish"). 4`] = `"8fish"`;
 
 exports[`example/words.ts adder Will match a known snapshot ("cat","cat"). 1`] = `"catcat"`;
 
+exports[`example/words.ts adder Will match a known snapshot ("cat","dog"). 1`] = `"catdog"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("cat","fish"). 1`] = `"catfish"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("dog","cat"). 1`] = `"dogcat"`;
+
 exports[`example/words.ts adder Will match a known snapshot ("dog","dog"). 1`] = `"dogdog"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("dog","fish"). 1`] = `"dogfish"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("fish","cat"). 1`] = `"fishcat"`;
+
+exports[`example/words.ts adder Will match a known snapshot ("fish","dog"). 1`] = `"fishdog"`;
 
 exports[`example/words.ts adder Will match a known snapshot ("fish","fish"). 1`] = `"fishfish"`;
